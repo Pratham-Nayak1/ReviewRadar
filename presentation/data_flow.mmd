@@ -1,0 +1,9 @@
+flowchart TD
+  source[ApacheJIT source and JIT-Smart source] --> audit[Schema and provenance audits]
+  audit --> dev[Development chronological folds]
+  dev --> prep[Training-only imputation and scaling]
+  prep --> models[Dummy Logistic RF HGB]
+  models --> score[Scores and threshold decisions]
+  score --> budget[5 10 20 percent review budgets]
+  score --> app[ReviewRadar UI]
+  later[New later dataset required] -. blocked .-> holdout[Future holdout evaluation]

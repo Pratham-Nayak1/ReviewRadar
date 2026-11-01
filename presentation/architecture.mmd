@@ -1,0 +1,10 @@
+flowchart LR
+  raw[Raw ApacheJIT CSV] --> load[src/data.py]
+  load --> split[src/split.py]
+  split --> train[src/train.py]
+  train --> artifact[Saved joblib pipeline]
+  artifact --> infer[src/predict.py]
+  infer --> ui[Streamlit app.py]
+  ui --> queue[Ranked review queue]
+  split --> eval[src/evaluate.py]
+  eval --> reports[Evaluation reports]

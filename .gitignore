@@ -1,0 +1,80 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Local development tools
+.vscode/
+.idea/
+*.code-workspace
+*.egg-info/
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Generated model artifacts and experiment outputs
+*.joblib
+*.pkl
+*.pickle
+models/
+reports/figures/
+
+# Local datasets and processed data
+data/raw/
+data/external/raw/
+data/external/processed/
+data/processed/
+*.csv
+*.csv.gz
+*.parquet
+*.zip
+
+# Local screenshots are allowed only when deliberately reviewed for release.
+docs/images/*
+!docs/images/reviewradar-overview.png
+
+# Small generated benchmark tables are safe to publish when reviewed.
+# Raw, processed, and ad-hoc prediction CSVs remain excluded.
+!reports/model_comparison.csv
+!reports/model_experiments.csv
+!reports/evaluation_*.csv
+!reports/official_split_*.csv
+!reports/split_summary.csv
+!reports/evaluation_config.json
+!reports/year_date_mismatch_samples.csv
+!reports/apachejit_artifact_inventory.csv
+!reports/dataset_compatibility_matrix.csv
+!reports/dataset_download_log.csv
+!reports/redef_schema_summary.csv
+!reports/jit_smart_schema_summary.csv
+!data/external/dataset_registry.csv
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+

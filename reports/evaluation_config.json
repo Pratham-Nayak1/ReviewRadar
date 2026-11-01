@@ -1,0 +1,48 @@
+{
+  "positive_class": "buggy=True",
+  "review_fraction": 0.1,
+  "review_budgets": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "review_k_validation": 1053,
+  "review_k_test": 1932,
+  "random_selection_simulations": 1000,
+  "selected_model": "random_forest",
+  "selected_configuration": {
+    "class_weight": "balanced_subsample",
+    "min_samples_leaf": 2,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "selection_metric": "validation_pr_auc_average_precision",
+  "threshold_metric": "validation_f1",
+  "selected_threshold": 0.4402460058475116,
+  "validation_threshold_f1": 0.6013092269326683,
+  "random_seed": 42,
+  "feature_columns": [
+    "la",
+    "ld",
+    "nf",
+    "nd",
+    "ns",
+    "ent",
+    "ndev",
+    "age",
+    "nuc",
+    "aexp",
+    "arexp",
+    "asexp"
+  ],
+  "excluded_columns": [
+    "commit_id",
+    "buggy",
+    "fix",
+    "year",
+    "author_date",
+    "project"
+  ],
+  "test_used_for_selection": false
+}
